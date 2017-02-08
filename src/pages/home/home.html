@@ -1,0 +1,63 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Up-Joystick
+    </ion-title>
+
+    <ion-buttons end>
+      <button ion-button icon-only (click)="goToSettings()">
+        <ion-icon name="settings"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div *ngIf="settings" text-center>
+    {{ settings.ip }}
+  </div>
+  <ion-row *ngIf="settings">
+    <ion-col width-50>
+      <ion-row>
+        <ion-col text-center>
+          <button ion-button large (click)="press(settings.up)"><ion-icon name="arrow-dropup-circle"></ion-icon></button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col width-50 text-center>
+          <button ion-button large (click)="press(settings.left)"><ion-icon name="arrow-dropleft-circle"></ion-icon></button>
+        </ion-col>
+        <ion-col width-50 text-center>
+          <button ion-button large (click)="press(settings.right)"><ion-icon name="arrow-dropright-circle"></ion-icon></button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col text-center>
+          <button ion-button large (click)="press(settings.down)"><ion-icon name="arrow-dropdown-circle"></ion-icon></button>
+        </ion-col>
+      </ion-row>
+    </ion-col>
+
+    <ion-col width-50>
+      <ion-row>
+        <ion-col text-center>
+          <button ion-button large (click)="press(settings.a)">A</button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col width-50 text-center>
+          <button ion-button large (click)="press(settings.b)">B</button>
+        </ion-col>
+        <ion-col width-50 text-center>
+          <button ion-button large (click)="press(settings.c)">C</button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col text-center>
+          <button ion-button large (click)="press(settings.d)">D</button>
+        </ion-col>
+      </ion-row>
+    </ion-col>
+  </ion-row>
+
+</ion-content>

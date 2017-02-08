@@ -1,0 +1,71 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Settings
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <form (submit)="save()">
+    <ion-list *ngIf="settings">
+      <ion-item>
+        <ion-label>IP</ion-label>
+        <ion-input [(ngModel)]="settings.ip" [ngModelOptions]="{ standalone: true }"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label><ion-icon name="arrow-dropup-circle"></ion-icon></ion-label>
+        <ion-select [(ngModel)]="settings.up" [ngModelOptions]="{ standalone: true }">
+          <ion-option *ngFor="let button of buttonOptions" value="{{ button }}">{{ button }}</ion-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-label><ion-icon name="arrow-dropleft-circle"></ion-icon></ion-label>
+        <ion-select [(ngModel)]="settings.left" [ngModelOptions]="{ standalone: true }">
+          <ion-option *ngFor="let button of buttonOptions" value="{{ button }}">{{ button }}</ion-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-label><ion-icon name="arrow-dropright-circle"></ion-icon></ion-label>
+        <ion-select [(ngModel)]="settings.right" [ngModelOptions]="{ standalone: true }">
+          <ion-option *ngFor="let button of buttonOptions" value="{{ button }}">{{ button }}</ion-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-label><ion-icon name="arrow-dropdown-circle"></ion-icon></ion-label>
+        <ion-select [(ngModel)]="settings.down" [ngModelOptions]="{ standalone: true }">
+          <ion-option *ngFor="let button of buttonOptions" value="{{ button }}">{{ button }}</ion-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>A</ion-label>
+        <ion-select [(ngModel)]="settings.a" [ngModelOptions]="{ standalone: true }">
+          <ion-option *ngFor="let button of buttonOptions" value="{{ button }}">{{ button }}</ion-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>B</ion-label>
+        <ion-select [(ngModel)]="settings.b" [ngModelOptions]="{ standalone: true }">
+          <ion-option *ngFor="let button of buttonOptions" value="{{ button }}">{{ button }}</ion-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>C</ion-label>
+        <ion-select [(ngModel)]="settings.c" [ngModelOptions]="{ standalone: true }">
+          <ion-option *ngFor="let button of buttonOptions" value="{{ button }}">{{ button }}</ion-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>D</ion-label>
+        <ion-select [(ngModel)]="settings.d" [ngModelOptions]="{ standalone: true }">
+          <ion-option *ngFor="let button of buttonOptions" value="{{ button }}">{{ button }}</ion-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+    <button ion-button full>Save</button>
+  </form>
+</ion-content>
