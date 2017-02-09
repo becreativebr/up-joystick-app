@@ -7,22 +7,27 @@ Use your Android, iOS and Windows Phone device as a joystick on your laptop and 
 This project contains code examples to map the keys from the computer keyboard and press them from a smartphone over socket protocols.
 
 ## Installation
+
 `$ npm install -g cordova ionic`
 
 # Execution
 
 ### From Windows, Mac and Linux:
+
 `$ ionic platform add android`
 `$ ionic run android`
 
 ### From Mac:
+
 `$ ionic platform add ios`
 `$ ionic run ios`
 
 ## Tests on browser
+
 `$ ionic serve`
 
 ## To Do
+
 * Add "Tests" section
 
 ## License
