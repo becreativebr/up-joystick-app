@@ -34,7 +34,7 @@ This project contains code examples to map the keys from the computer keyboard a
 
 The MIT License
 
-Copyright (c) <a href="http://becreative.com.br" target="_blank">BeCreative!</a> 2017 .  
+Copyright (c) <a href="http://becreative.com.br" target="_blank">BeCreative</a> 2017 .  
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
