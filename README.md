@@ -34,7 +34,7 @@ This project contains code examples to map the keys from the computer keyboard a
 
 The MIT License
 
-![alt text](http://i.imgur.com/9FoeDZZ.png "BeCreative Logo")(http://becreative.com.br)
+![alt text](http://i.imgur.com/9FoeDZZ.png "BeCreative Logo")http://becreative.com.br
 Copyright (c) 2017 BeCreative.  
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
